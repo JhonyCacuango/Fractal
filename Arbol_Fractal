@@ -1,0 +1,11 @@
+import turtle
+
+def arbol(longitudRama,t):
+    if longitudRama > 5:
+        t.forward(longitudRama)
+        t.right(20)
+        arbol(longitudRama-15,t)
+        t.left(40)
+        arbol(longitudRama-15,t)
+        t.right(20)
+        t.backward(longitudRama)
